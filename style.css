@@ -84,16 +84,19 @@ footer {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;  /* Foto à esquerda */
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 20px;                     
     text-align: left;
-    margin: 0 auto;
-    max-width: 900px;  /* Definindo largura máxima para manter o layout dentro do conteúdo */
+    max-width: 1000px;             
+    margin: 0 auto;                
+    padding: 0 20px;               
+    position: relative;
+    left: 40px; 
 }
 
 .profile-photo {
-    width: 250px;  /* Aumente o tamanho da foto */
-    height: 250px;  /* Aumente o tamanho da foto */
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -104,4 +107,106 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 0;
 }
+
+.text-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.achievements {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.achievements li {
+    margin-bottom: 8px;
+}
+
+.item-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.institution-location {
+    font-style: italic;
+    color: #555;
+}
+
+.institution-location .location {
+    margin-left: 10px;
+    font-style: normal;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #888;
+    margin-left: auto;
+}
+
+.description {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.description li {
+    margin-bottom: 8px;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap; 
+}
+
+.item-row h3 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.right-align {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.location {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.date {
+    font-style: italic;
+    color: #666;
+}
+
+.item em {
+    display: block;
+    margin-top: 4px;
+    font-style: italic;
+    color: #555;
+}
+
+.description {
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.description li {
+    margin-bottom: 8px;
+}
+
+
